@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { APIService } from '../services/api.service';
 
 @Component({
-  selector: 'app-book-reviews',
+  selector: 'app-books',
   templateUrl: './book-reviews.component.html',
   styleUrls: ['./book-reviews.component.css']
+
 })
 export class BookReviewsComponent implements OnInit {
 
-  constructor() { }
+
+
+
+  books;
+  constructor(private apiService : APIService){
+  }
 
   ngOnInit() {
+
+    
+
+    this.books = this.apiService.books
   }
 
 }
