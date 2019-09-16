@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TopStoriesComponent } from './top-stories/top-stories.component';
 import { BookReviewsComponent } from './book-reviews/book-reviews.component';
 import { MostPopularComponent } from './most-popular/most-popular.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -16,12 +17,14 @@ import { MostPopularComponent } from './most-popular/most-popular.component';
     TopStoriesComponent,
     BookReviewsComponent,
     MostPopularComponent,
+    NgbModule,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
