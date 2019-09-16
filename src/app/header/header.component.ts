@@ -9,6 +9,11 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  clickMessage = '';
+
+  changeBackgroundImage() {
+    this.clickMessage = "Working";
+  }
   ngOnInit() {
   }
 

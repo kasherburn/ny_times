@@ -1,9 +1,17 @@
-<h1><a href="/">New York Times</a></h1>
-<span><a routerLink="/book-reviews">Books</a></span>
-<span><a routerLink="/most-popular">Most Popular Stories </a></span>
-<span><a routerLink="/top-stories">Latest World Stories</a></span>
+<div class="nav-area">
+<div class="background-image">
+<div class='logo-container'><a href="/"><img src="../../assets/images/new-york-times-logo-png-transparent.png" class='logo'></a>
+</div>
+
+<div class="main-nav">
+<span><a routerLink="/book-reviews" (click)="changeBackgroundImage()">Books</a></span>
+<span><a routerLink="/most-popular">Popular </a></span>
+<span><a routerLink="/top-stories">Stories</a></span>
+</div>
+</div>
+</div>
+
+{{clickMessage}}
 
 
 
-
-<router-outlet></router-outlet>
