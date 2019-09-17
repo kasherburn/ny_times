@@ -7,14 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  bgStyle: string;
 
-  clickMessage = '';
+  constructor() {
+    this.bgStyle = 'new_york_busy.jpeg';
+   }
 
-  changeBackgroundImage() {
-    this.clickMessage = "Working";
+  changeBackgroundImageHome(){
+    this.bgStyle = 'new_york_busy.jpeg'
   }
+  
+
+  changeBackgroundImageBooks() {
+    this.bgStyle = 'books.jpeg';
+  }
+
+  changeBackgroundImagePopular() {
+    this.bgStyle = 'popular.jpeg';
+  }
+
+  changeBackgroundImageStories() {
+    this.bgStyle = 'stories.jpg';
+  }
+
   ngOnInit() {
+    
   }
 
 }
