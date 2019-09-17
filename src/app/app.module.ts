@@ -8,6 +8,8 @@ import { TopStoriesComponent } from './top-stories/top-stories.component';
 import { BookReviewsComponent } from './book-reviews/book-reviews.component';
 import { MostPopularComponent } from './most-popular/most-popular.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,14 +19,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TopStoriesComponent,
     BookReviewsComponent,
     MostPopularComponent,
-    
+    HeaderComponent,
+    FooterComponent,
+  
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
     
   ],
   providers: [],
