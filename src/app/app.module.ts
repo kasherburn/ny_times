@@ -9,6 +9,7 @@ import { MostPopularComponent } from './most-popular/most-popular.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+// import { JwPaginationComponent } from 'jw-angular-pagination';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     MostPopularComponent,
     HeaderComponent,
     FooterComponent,
-  
+    // JwPaginationComponent,
    
   ],
   imports: [
@@ -27,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    
     
   ],
   providers: [],

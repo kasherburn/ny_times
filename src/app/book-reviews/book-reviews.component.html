@@ -1,6 +1,27 @@
 
-<h1>it works</h1>
-<div *ngFor ="let book of books | async">
+<!-- <h1>it works</h1> -->
+
+
+<div  *ngFor ="let book of books | async">
     
-    <h1>{{book.title}}</h1>
+    <div class="bodySection">
+        <div class="book-card">
+    
+            <div class="bookImage">
+                <img src="{{book.book_image}}"> 
+            </div>
+            <div class="content">
+            <div class="title">
+                <h2>{{book.title}}</h2>
+                <h4>{{book.author}}</h4>
+               
+            </div>
+                <div class="description">
+                    <p>{{book.description}}</p>
+                    <a href="{{book.amazon_product_url}}"><button>Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
