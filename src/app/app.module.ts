@@ -17,13 +17,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TopStoriesComponent,
     BookReviewsComponent,
     MostPopularComponent,
-    NgbModule,
+    
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbModule
     
   ],
   providers: [],
