@@ -9,7 +9,11 @@ import { MostPopularComponent } from './most-popular/most-popular.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-// import { JwPaginationComponent } from 'jw-angular-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MatPaginatorModule, MatTableDataSource, MatTable} from '@angular/material';
+// import { MatTableModule } from '@angular/material/table';
+// import { MatSortModule } from '@angular/material/sort';
+
 
 
 @NgModule({
@@ -20,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
     MostPopularComponent,
     HeaderComponent,
     FooterComponent,
-    // JwPaginationComponent,
+    
+    
+  
    
   ],
   imports: [
@@ -28,6 +34,14 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    BrowserAnimationsModule,
+    // MatPaginatorModule,
+    // MatTableDataSource,
+    // MatTable,
+    // MatTableModule,
+    // MatSortModule
+    
+   
     
     
   ],
