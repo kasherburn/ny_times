@@ -23,6 +23,7 @@ export class BookReviewsComponent {
   displayedColumns: string[] = ['books'];
   @ViewChild(MatSort, {static:false}) sort: MatSort;
   @ViewChild(MatPaginator, {static:false}) paginator:MatPaginator;
+  searchKey: string;
 
   constructor(private apiService : APIService){}
 
@@ -39,9 +40,17 @@ export class BookReviewsComponent {
   });
   this.listData = new MatTableDataSource(array);
   this.listData.sort = this.sort;
-    this.listData.paginator = this.paginator;
+  this.listData.paginator = this.paginator;
   });
-    
   }
+  onSearchClear(){
+    this.searchKey = "";
+    this.applyFilter();
+  }
+
+  applyFilter() {
+    this.listData.filter = this.searchKey.trim().toLowerCase();
+  }
+
 }
 
