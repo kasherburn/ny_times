@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   bgStyle: string;
+  fontWeight: string;
 
   constructor() {
     this.bgStyle = 'new_york_busy.jpeg';
@@ -20,6 +21,7 @@ export class HeaderComponent implements OnInit {
 
   changeBackgroundImageBooks() {
     this.bgStyle = 'books.jpeg';
+    this.fontWeight = 'bold';
   }
 
   changeBackgroundImagePopular() {
