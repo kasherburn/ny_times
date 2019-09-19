@@ -28,7 +28,7 @@ export class APIService {
         const pathMostPopular ='https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=UV9MuWwAgYMz9jY6im2DGQNJCSN60usr';
         this.mostPopular = http.get<any>(pathMostPopular).pipe(map(data => data.results))
     
-        const pathTopStories ='https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=UV9MuWwAgYMz9jY6im2DGQNJCSN60usr';
+        const pathTopStories ='https://api.nytimes.com/svc/topstories/v2/science.json?api-key=UV9MuWwAgYMz9jY6im2DGQNJCSN60usr';
         this.topStories = http.get<any>(pathTopStories).pipe(map(data => data.results)
     )
       }

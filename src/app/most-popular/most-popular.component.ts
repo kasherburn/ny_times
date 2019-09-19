@@ -17,11 +17,11 @@ export class MostPopularComponent implements OnInit {
   @ViewChild(MatPaginator, {static:false}) paginator:MatPaginator;
   searchKey: string;
 
-  // mostPopular;
+  
   constructor(private mostPopularService : APIService){}
 
   ngOnInit() {
-    // this.mostPopular = this.mostPopularService.mostPopular
+   
     
       this.mostPopularService.mostPopular.subscribe(
         list => {
