@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
-
-
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { APIService } from '../services/api.service';
+import { MatPaginator} from '@angular/material/paginator';
+import{MatTableDataSource, MatSort} from '@angular/material';
 
 @Component({
   selector: 'app-books',
@@ -12,12 +11,39 @@ import { APIService } from '../services/api.service';
 })
 export class MostPopularComponent implements OnInit {
 
-  mostPopular;
-  constructor(private mostPopularService : APIService){
-  }
+  listData: MatTableDataSource<any>;
+  displayedColumns: string[] = ['mostPopular'];
+  @ViewChild(MatSort, {static:false}) sort: MatSort;
+  @ViewChild(MatPaginator, {static:false}) paginator:MatPaginator;
+  searchKey: string;
+
+  // mostPopular;
+  constructor(private mostPopularService : APIService){}
 
   ngOnInit() {
-    this.mostPopular = this.mostPopularService.mostPopular
-  }
+    // this.mostPopular = this.mostPopularService.mostPopular
+    
+      this.mostPopularService.mostPopular.subscribe(
+        list => {
+          let array = list.map(item =>{
+            return {
+              $key: item.key,
+              ...item
+            };
+    });
+    this.listData = new MatTableDataSource(array);
+    this.listData.sort = this.sort;
+    this.listData.paginator = this.paginator;
+    });
+    }
+    onSearchClear(){
+      this.searchKey = "";
+      this.applyFilter();
+    }
+  
+    applyFilter() {
+      this.listData.filter = this.searchKey.trim().toLowerCase();
+    }
+  
 
 }

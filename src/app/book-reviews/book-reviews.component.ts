@@ -17,7 +17,7 @@ import{MatTableDataSource, MatSort} from '@angular/material';
 
 
 
-export class BookReviewsComponent {
+export class BookReviewsComponent implements OnInit{
   
   listData: MatTableDataSource<any>;
   displayedColumns: string[] = ['books'];
