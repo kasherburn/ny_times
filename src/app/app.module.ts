@@ -10,7 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatPaginatorModule, MatTableDataSource, MatTable} from '@angular/material';
+import { MatTableModule, MatPaginatorModule, MatSortModule} from '@angular/material';
 // import { MatTableModule } from '@angular/material/table';
 // import { MatSortModule } from '@angular/material/sort';
 
@@ -35,11 +35,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     NgbModule,
     BrowserAnimationsModule,
-    // MatPaginatorModule,
+    MatPaginatorModule,
     // MatTableDataSource,
     // MatTable,
-    // MatTableModule,
-    // MatSortModule
+    MatTableModule,
+    MatSortModule
     
    
     
