@@ -17,8 +17,11 @@
     
                     <div class="bodySection">
                             <div class="mostPop-card">
-                                <div class="popImage">
+                                <div class="popImage" *ngIf="element.media.length > 0">
                                     <img src="{{element['media'][0]['media-metadata'][2]['url']}}">
+                                </div>
+                                <div class="popImage" *ngIf="element.media.length === 0"> 
+                                    <img src="../../assets/images/latest-newsn.jpg">
                                 </div>
                                 <div class="content">
                                 <div class="title">

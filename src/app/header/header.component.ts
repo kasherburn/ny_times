@@ -8,9 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   bgStyle: string;
-<<<<<<< HEAD
-  fontWeight: string;
-=======
   bookFontWeight: string;
   popularFontWeight: string;
   latestFontWeight: string;
@@ -18,7 +15,6 @@ export class HeaderComponent implements OnInit {
   bookColor: string;
   popularColor: string;
   latestColor: string;
->>>>>>> f51fa8cf82b3a35a5a2eca57e0855f4527df7305
 
   constructor() {
     this.bgStyle = 'new_york_busy.jpeg';
@@ -42,9 +38,6 @@ export class HeaderComponent implements OnInit {
 
   changeBackgroundImageBooks() {
     this.bgStyle = 'books.jpeg';
-<<<<<<< HEAD
-    this.fontWeight = 'bold';
-=======
     this.bookFontWeight = 'bold';
     this.popularFontWeight = 'normal';
     this.latestFontWeight = 'normal';
@@ -52,7 +45,6 @@ export class HeaderComponent implements OnInit {
     this.bookColor = 'gold';
     this.popularColor = 'white';
     this.latestColor = 'white';
->>>>>>> f51fa8cf82b3a35a5a2eca57e0855f4527df7305
   }
 
   changeBackgroundImagePopular() {

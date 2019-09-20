@@ -17,8 +17,11 @@
     
                     <div class="bodySection">
                             <div class="book-card">
-                                <div class="bookImage">
+                                <div class="bookImage" *ngIf="element.multimedia.length > 0"> 
                                     <img src="{{element['multimedia'][4]['url']}}">
+                                </div>
+                                <div class="bookImage" *ngIf="element.multimedia.length === 0"> 
+                                    <img src="../../assets/images/latest-newsn.jpg">
                                 </div>
                                 <div class="content">
                                 <div class="title">
