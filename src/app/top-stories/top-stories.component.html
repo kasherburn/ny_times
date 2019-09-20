@@ -1,18 +1,26 @@
-<!-- <p>top-stories works!</p> -->
-
-<div class="search-div">
-        <mat-form-field class="search-form-field">
-            <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
-            <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onSearchClear()">
+<div class="head-head">
+    <div class="head">
+    
+    <div>
+        <h1>Top Stories</h1>
+    </div>
+    
+    
+    <div class="search-div">
+        <mat-form-field class="search-form-field" floatLabel="never">
+            <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()" >
+            <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onSearchClear()" *ngIf="searchKey">
                 <mat-icon>close</mat-icon>
             </button>
         </mat-form-field>
+    </div>
+    </div>
     </div>
     
     <mat-table [dataSource]="listData" matSort>
            
             <ng-container matColumnDef="topStories">
-              <mat-header-cell *matHeaderCellDef mat-sort-header> Top Stories </mat-header-cell>
+              <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
               <mat-cell *matCellDef="let element">
     
                     <div class="bodySection">
