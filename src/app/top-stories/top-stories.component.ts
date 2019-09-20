@@ -15,10 +15,12 @@ export class TopStoriesComponent implements OnInit {
   @ViewChild(MatSort, {static:false}) sort: MatSort;
   @ViewChild(MatPaginator, {static:false}) paginator:MatPaginator;
   searchKey: string;
+
   
   constructor(private topStoriesService : APIService){
   }
 
+ 
   ngOnInit() {
     this.topStoriesService.topStories.subscribe(
       list => {
@@ -41,5 +43,8 @@ export class TopStoriesComponent implements OnInit {
   applyFilter() {
     this.listData.filter = this.searchKey.trim().toLowerCase();
   }
+
+ 
+
 
 }

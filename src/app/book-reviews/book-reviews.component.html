@@ -15,8 +15,11 @@
 
                 <div class="bodySection">
                         <div class="book-card">
-                            <div class="bookImage">
+                            <div class="bookImage" *ngIf="element.book_image !== null">
                                 <img src="{{element.book_image}}">
+                            </div>
+                            <div class="bookImage" *ngIf="element.book_image === null">
+                                <img src="../../assets/images/book-image.jpg">
                             </div>
                             <div class="content">
                             <div class="title">
@@ -39,6 +42,6 @@
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
       </mat-table>
-      <mat-paginator [pageSizeOptions]="[2,5]" showFirstLastButtons></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[5,10]" showFirstLastButtons></mat-paginator>
 
 
