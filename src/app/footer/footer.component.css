@@ -2,7 +2,62 @@ img {
     width:100%;
 }
 
-.footer{
+.footer-top{
+    box-sizing: border-box;
+    padding:0vh;
     background-color: black;
-    height:50vh;
+    height:40vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.footer-bottom{
+    border-top: 1px solid gold;
+    box-sizing: border-box;
+    padding:3vh;
+    background-color: black;
+    height:15vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.footer-bottom h1{
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+
+.footer-bottom h3{
+    display:flex;
+    justify-content: center;
+}
+
+.kelly{
+    display:flex;
+    flex-direction:column;
+    justify-content: center; 
+}
+
+.kelly h2{
+    display:flex;
+    justify-content: center; 
+}
+
+.adam h2{
+    display:flex;
+    justify-content: center; 
+}
+
+.adam{
+    display:flex;
+    flex-direction:column;
+    justify-content: center; 
+}
+
+.footer-top img{
+    border-radius :100%;
+    height:20vh;
+    width:20vh;
 }
