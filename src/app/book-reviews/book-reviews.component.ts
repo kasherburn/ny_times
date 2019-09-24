@@ -6,8 +6,6 @@ import{MatTableDataSource, MatSort} from '@angular/material';
 
 
 
-
-
 @Component({
   selector: 'app-books',
   templateUrl: './book-reviews.component.html',
@@ -26,7 +24,6 @@ export class BookReviewsComponent implements OnInit{
   searchKey: string;
 
 
- 
 
 
   constructor(private apiService : APIService){}
@@ -60,16 +57,16 @@ export class BookReviewsComponent implements OnInit{
 
   isShow: boolean;
   topPosToStartShowing = 100;
+  
 
   @HostListener('window:scroll')
-
-
-  //this method checks where you are on the page against the document body and is used to compare how far is needed to scroll when the scrollToTop method is run
   checkScroll() {
+      
 
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-    // console.log('[scroll]', scrollPosition);
+    console.log('[scroll]', scrollPosition);
+    console.log(document.body.scrollHeight / 4.2);
     
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
@@ -81,7 +78,7 @@ export class BookReviewsComponent implements OnInit{
   // scroll up on window to the top of the component page 
   gotoTop() {
     window.scroll({ 
-      top: 954, 
+      top: document.body.scrollHeight / 4.2,
       left: 0, 
       behavior: 'smooth',
     });
