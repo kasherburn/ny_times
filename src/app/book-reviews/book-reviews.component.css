@@ -1,3 +1,4 @@
+
 .bodySection {
     width:100%;
     display: flex;
@@ -18,4 +19,41 @@
 
 .content {
     margin-left: 5vh;
+}
+
+
+ /* paginator styling */
+
+::ng-deep .mat-paginator {
+   margin-right: 15vw;
+   color: black;
+   font-weight: lighter;
+}
+
+
+::ng-deep .mat-paginator-page-size-select {
+    width: 2vw!important;
+}
+
+::ng-deep .mat-select-value {
+  color: black;
+    font-size: 15px;
+}
+::ng-deep .mat-select-arrow {
+    color: black;
+}
+::ng-deep .mat-option{
+  padding: 0!important;
+
+}
+::ng-deep .mat-option-text {
+    text-align: left;
+}
+
+::ng-deep .mat-paginator-icon {
+    color: black;
+}
+
+::ng-deep .mat-paginator-icon:hover{
+    color: gold;
 }

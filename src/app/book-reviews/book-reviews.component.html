@@ -1,9 +1,11 @@
 <div class="head-head">
 <div class="head">
 
-<div>
+<div class='subheading'>
+    
     <h1>Book Reviews</h1>
-</div>
+    
+
 
 
 <div class="search-div">
@@ -14,13 +16,15 @@
         </button>
     </mat-form-field>
 </div>
+</div> 
 </div>
 </div>
 
-<mat-table [dataSource]="listData" matSort>
+
+<mat-table [dataSource]="listData">
        
         <ng-container matColumnDef="books">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef>  </mat-header-cell>
           <mat-cell *matCellDef="let element">
 
                 <div class="bodySection">
@@ -52,6 +56,6 @@
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
       </mat-table>
-      <mat-paginator [pageSizeOptions]="[5,10]" showFirstLastButtons></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[5,10, 15]" showFirstLastButtons (click)="gotoTop()"></mat-paginator>
 
 
