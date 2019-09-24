@@ -17,6 +17,8 @@ import{MatTableDataSource, MatSort} from '@angular/material';
 
 export class BookReviewsComponent implements OnInit{
   
+ 
+
   listData: MatTableDataSource<any>;
   displayedColumns: string[] = ['books'];
   @ViewChild(MatSort, {static:false}) sort: MatSort;
@@ -53,7 +55,7 @@ export class BookReviewsComponent implements OnInit{
     this.listData.filter = this.searchKey.trim().toLowerCase();
   }
 
-  //when we click next on our pagination arrow the code below will scroll back to top of component page
+  // //when we click next on our pagination arrow the code below will scroll back to top of component page
 
   isShow: boolean;
   topPosToStartShowing = 100;
@@ -65,8 +67,8 @@ export class BookReviewsComponent implements OnInit{
 
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-    console.log('[scroll]', scrollPosition);
-    console.log(document.body.scrollHeight / 4.2);
+  
+    
     
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
