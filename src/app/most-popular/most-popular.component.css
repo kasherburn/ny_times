@@ -5,7 +5,7 @@
 }
 
 .mostPop-card {
-    margin-top: 5vh;
+    margin: 5vh 0 5vh 0;
     width: 60%;
     display:flex;
     flex-direction: row;

@@ -15,16 +15,26 @@
                 <span><a routerLink="/book-reviews" (click)="changeBackgroundImageBooks()" [style.color]="bookColor" [style.font-weight]="bookFontWeight">Books</a></span>
                 <span><a routerLink="/most-popular" (click)="changeBackgroundImagePopular()" [style.color]="popularColor" [style.font-weight]="popularFontWeight">Popular </a></span>
                 <span><a routerLink="/top-stories" (click)="changeBackgroundImageStories()" [style.color]="latestColor" [style.font-weight]="latestFontWeight">Latest</a></span>
-                </div>
+                
+            </div>
+               
         </div>
     </div>
 
+    
+
 <div class="nav-area">
-<div class="background-image">
-    <img src="../../assets/images/{{bgStyle}}" type='background-image' >
+<div class="background-image" >
+    <div class="absolute">
+    <img class="back" src="../../assets/images/{{bgStyle}}" type='background-image' />
+    <img class="fade_out {{fade_in}}" src="../../assets/images/{{bgStyle2[(bgStyle2.length)-2]?bgStyle2[(bgStyle2.length)-2]:bgStyle2[(bgStyle2.length)-1]}}" type='background-image' />
+    
+    </div>
 
 </div>
 </div>
+
+
 
 
 
