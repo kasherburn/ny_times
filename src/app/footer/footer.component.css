@@ -1,7 +1,9 @@
 img {
     width:100%;
 }
-
+.new-york {
+    margin-bottom: -10px;
+}
 .footer-top{
     box-sizing: border-box;
     padding:0vh;
