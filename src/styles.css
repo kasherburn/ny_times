@@ -54,26 +54,12 @@ p {
 }
 
 html, body { height: 100%; }
-<<<<<<< HEAD
 body { 
     margin: 0;
     font-family: 'News Cycle', sans-serif;
-    letter-spacing: 2px;
-}
-
-=======
-body {
-    
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
     
 }
 
-body {
-  
-    background-color: white;
-}
->>>>>>> cda88248d1d1d0bd391625b45c207162706a04b6
 
 /* 
   filter controls  */
