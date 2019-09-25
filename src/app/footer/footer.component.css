@@ -18,7 +18,8 @@ img {
     border-top: 1px solid gold;
     box-sizing: border-box;
     padding:3vh;
-    background-color: black;
+   
+    background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0,0.7), rgba(255,255,255,0));
     height:15vh;
     display:flex;
     flex-direction:column;
@@ -39,23 +40,28 @@ img {
 .kelly{
     display:flex;
     flex-direction:column;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
 }
+
 
 .kelly h2{
     display:flex;
     justify-content: center; 
+    color: rgb(170, 170, 170)
 }
 
 .adam h2{
     display:flex;
     justify-content: center; 
+    color: rgb(170, 170, 170)
 }
 
 .adam{
     display:flex;
     flex-direction:column;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center; 
 }
 
 .footer-top img{
