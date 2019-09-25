@@ -25,13 +25,15 @@
     background-color: gray;
     border: none;
     color: white;
-    padding: 5px 12px;
+    padding: 0.5vh 1vh;
+    font-size: 2vh;
+    margin-top: 2vh;
+    border-radius: 1vh;;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    border-radius: 4px;
+    
+    
 }
 
 #buy-now:hover {
@@ -43,8 +45,12 @@
 
 ::ng-deep .mat-paginator {
    margin-right: 15vw;
+   margin-left: 50vw;
+   height: 2vh;
+   width: 35vw;
    color: black;
    font-weight: lighter;
+   font-size: 2vh;
 }
 
 
@@ -58,6 +64,7 @@
 }
 ::ng-deep .mat-select-arrow {
     color: black;
+   
 }
 ::ng-deep .mat-option{
   padding: 0!important;
@@ -65,10 +72,13 @@
 }
 ::ng-deep .mat-option-text {
     text-align: left;
+
 }
 
-::ng-deep .mat-paginator-icon {
+::ng-deep svg.mat-paginator-icon {
     color: black;
+    height: 4vh;
+    width: 4vh;
 }
 
 ::ng-deep .mat-paginator-icon:hover{

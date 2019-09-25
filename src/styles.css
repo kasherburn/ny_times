@@ -91,8 +91,8 @@ body {
 }
 .search-form-field {
     width: 30vw;
-    margin-left: 10px;
-    padding: 5px 10px;
+    margin-left: 1vw;
+    padding: 1vh 1.5vw;
     background-color:rgba(240, 239, 238, 0.3);
     position: absolute;
     bottom: 0;
