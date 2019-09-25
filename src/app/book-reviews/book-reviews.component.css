@@ -35,9 +35,7 @@
 }
 
 #buy-now:hover {
-    border-style: solid;
-    border-bottom-color: black;
-   border-bottom-width: 1px;
+  background-color: rgb(117, 117, 117);
 }
 
 
