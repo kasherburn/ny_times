@@ -6,8 +6,6 @@ import{MatTableDataSource, MatSort} from '@angular/material';
 
 
 
-
-
 @Component({
   selector: 'app-books',
   templateUrl: './book-reviews.component.html',
@@ -19,6 +17,8 @@ import{MatTableDataSource, MatSort} from '@angular/material';
 
 export class BookReviewsComponent implements OnInit{
   
+ 
+
   listData: MatTableDataSource<any>;
   displayedColumns: string[] = ['books'];
   @ViewChild(MatSort, {static:false}) sort: MatSort;
@@ -26,7 +26,6 @@ export class BookReviewsComponent implements OnInit{
   searchKey: string;
 
 
- 
 
 
   constructor(private apiService : APIService){}
@@ -56,20 +55,20 @@ export class BookReviewsComponent implements OnInit{
     this.listData.filter = this.searchKey.trim().toLowerCase();
   }
 
-  //when we click next on our pagination arrow the code below will scroll back to top of component page
+  // //when we click next on our pagination arrow the code below will scroll back to top of component page
 
   isShow: boolean;
   topPosToStartShowing = 100;
+  
 
   @HostListener('window:scroll')
-
-
-  //this method checks where you are on the page against the document body and is used to compare how far is needed to scroll when the scrollToTop method is run
   checkScroll() {
+      
 
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-    // console.log('[scroll]', scrollPosition);
+  
+    
     
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
@@ -81,7 +80,7 @@ export class BookReviewsComponent implements OnInit{
   // scroll up on window to the top of the component page 
   gotoTop() {
     window.scroll({ 
-      top: 954, 
+      top: document.body.scrollHeight / 4.2,
       left: 0, 
       behavior: 'smooth',
     });
