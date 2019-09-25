@@ -125,3 +125,16 @@ body {
     color:black;
     caret-color: black;
 }
+
+
+    
+    .mat-form-field-label
+    {
+        color:rgb(179, 179, 179) !important;
+    }
+  
+    .mat-form-field-ripple {
+    display: none !important;
+    }
+    
+    
