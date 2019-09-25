@@ -35,6 +35,19 @@ h1 {
     border: 0px;
     margin: 0px;
     padding: 0px;   
+    font-size: 5vh;
+}
+
+h2 {
+   font-size: 4.5vh;
+}
+
+h3 {
+    font-size: 4vh;
+}
+
+h4 {
+    font-size: 3vh;
 }
 
 .mat-header-row {
@@ -51,12 +64,17 @@ h1 {
 p {
     padding: 0px;
     margin: 0px;
+    font-size: 2vh;
 }
 
-html, body { height: 100%; }
+.mat-table {
+    font-family: 'News Cycle', sans-serif !important; 
+}
+
+html, body { height: 100%; font-family: 'News Cycle', sans-serif !important;}
 body { 
     margin: 0;
-    font-family: 'News Cycle', sans-serif;
+    
     
 }
 
