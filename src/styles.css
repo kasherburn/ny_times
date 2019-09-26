@@ -117,8 +117,8 @@ body {
 
 
 .search-form-field div.mat-form-field-suffix button {
-    height: 32px;
-    width: 32px;
+    height: 5vh;
+    width: 5vh;
     border: none;
 }
 
@@ -154,6 +154,12 @@ body {
   
     .mat-form-field-ripple {
     display: none !important;
+    }
+
+    .mat-paginator-container{
+        display: flex;
+        justify-content: flex-start !important;
+        flex-direction: row;
     }
     
     
